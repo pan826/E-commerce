@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-comerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--this link for csss-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--this link for font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+        <img class="logo" src="xylonlogo2.png" href=""><span>XYLON.</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="shop">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">ContactUS</a>
+              </li>
+
+              <li class="nav-item">
+
+              <img src="newcart.svg" class="svg1"  width="20px">
+              <div class="srcBox">
+                <input id="SearchBox" type="search" placeholder="Search" name="q" value="" class="input-group-field search" aria-label="Search" autocomplete="off">
+            </div>
+              
+              <img src="search.svg" id="svg2" width="20px" >
+               
+              </li>
+              <div class="button">
+                <button id="btn1">Sign up</button>
+                <button id="btn2">Login</button>
+              </div>
+
+             
+          </div>
+        </div>
+      </nav>
+      <!--form-->
+      <!--- form-popup -->
+  <!-- login form -->
+   <div class="bulur-bg-overlay"></div>
+   <div  class="form-popup show-popup">
+     <span class="close-btn material-symbols-rounded" id="close">&times;</span>
+     <div class="form-box login">
+ 
+       <div class="form-detail">
+         <h2>Welcome Back</h2>
+         <p>Please log in with your personal information to stay connect with us</p>
+       </div>
+       <div class="form-content">
+         <h2>LOGIN</h2>
+         <form action="#">
+           <div class="input-feild">
+             <input type="tex" required>
+             <label>Email</label>
+           </div>
+ 
+           <div class="input-feild">
+             <input type="password" required>
+             <label>Password</label>
+           </div>
+ 
+           <a href="#" class="forgot-pass">forgot password</a>
+           <button type="submit">Log in</button>
+         </form>
+         <div class="bottom-link">
+           don't have an account? 
+           <a href="#" id="signup-link">Signup</a>
+         </div>
+ 
+       </div>
+       
+     </div>
+     </div>
+     
+
+
+   <!---- signup form -->
+     <div  class="form-show">
+      <span class="close-btn material-symbols-rounded" id="close">&times;</span>
+     <div class="form-box signup">
+       <div class="form-detail">
+         <h2>Creat Accoount</h2>
+         <p>To become a part of our community, please sign up using your personal information</p>
+       </div>
+       <div class="form-content">
+         <h2>SIGN UP</h2>
+         <form action="#">
+           <div class="input-feild">
+             <input type="tex" required>
+             <label>Enter your email</label>
+           </div>
+ 
+           <div class="input-feild">
+             <input type="password" required>
+             <label>Create Password</label>
+           </div>
+ 
+           <div class="policy-text">
+             <input type="checkbox" id="policy-check">
+             <label for="policy">I agree them<a href="#">Term & Condition
+             </a></label>
+           </div>
+           
+           <button type="submit">Sign Up</button>
+         </form>
+         <div class="bottom-link">
+          Already have an account? 
+           <a href="#" id="login-link">Login</a>
+         </div>
+         
+       </div>
+     </div>
+       </div>
+      
+      
+<!--section1-->
+      <section id="home">
+        <div class="container">
+          <h5>NEW ARRAIVLS</h5>
+          <h1> WITH XYLON <span>WHITH THE</span><span id="span"><sup>BEST OFFER</span></h1>
+          <p>Shoomatic offers your very comfortable time<br> on walking and exerciese</p>
+          <button id="btn1">Shop Now</button>
+        </div>
+      </section>
+      <!--sectopm 2-->
+      <section id="brand" class="container">
+        <div class="row m-0 py-5">
+          <img  class="img-fluid col-lg-2 col-md-4 col-6" src="clotheimg\brand1-removebg-preview.png"  alt="">
+          <img  class="img-fluid col-lg-2 col-md-4 col-6" src="clotheimg\brand2-removebg-preview.png"  alt="">
+          <img  class="img-fluid col-lg-2 col-md-4 col-6" src="clotheimg\brand5-removebg-preview.png"  alt="">
+          <img  class="img-fluid col-lg-2 col-md-4 col-6" src="clotheimg\brand4-removebg-preview.png"  alt="">
+          <img  class="img-fluid col-lg-2 col-md-4 col-6" src="clotheimg\brand9.webp"   alt="">
+          <img  class="img-fluid col-lg-2 col-md-4 col-6" src="clotheimg\brand8.png"  alt="">
+        </div>
+      </section>
+<!--section 3-->
+<section id="new" class="w-100">
+  <div class="row p-0 m-0">
+    <div class="one col-lg-4 col-md-12 col-12 p-0">
+      <img class="img-fluid" src="clotheimg\shoes-Photoroom.png" alt="">
+      <div class="details">
+        <h2>Exteme Rare Sneaker</h2>
+        <button class="text-uppercase">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="one col-lg-4 col-md-12 col-12 p-0">
+      <img class="img-fluid" src="clotheimg\shirt.jpg" alt="">
+      <div class="details">
+        <h2>Exteme Rare Sneaker</h2>
+        <button class="text-uppercase">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="one col-lg-4 col-md-12 col-12 p-0">
+      <img class="img-fluid" src="clotheimg\front-view-modern-boy-with-skateboard.jpg" alt="">
+      <div class="details">
+        <h2>Exteme Rare Sneaker</h2>
+        <button class="text-uppercase">Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!--section 4-->
+<section id="featured my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Our Featured</h3>
+    <hr class="mx-auto">
+    <p>Here are you can check out our new products with fair price on JD-COLLECTION</p>
+  </div>
+  <div class="row max-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\tshirt-Photoroom.png"  width="290px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--second-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\shirt2.jpeg"  width="280px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--third-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\shoes2.png"  width="290px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--forth-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\jeans.jpg"  width="200px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<!--section5-->
+<section id="banner" class="my-5 py-5">
+  <div class="container">
+    <h4>MID SEASON'S SALE</h4>
+    <h1>Authumn Collection <br>UP TO 20% OFF </h1>
+    <button class="text-uppercase">Shop Now</button>
+  </div>
+</section>
+
+<!--section6-->
+<section id="clothes" class="my-5">
+
+  <div class="container text-center mt-5 py-5">
+    <h3>Winter Collection </h3>
+    <hr class="mx-auto">
+    <p>Here are you can check out our new products with fair price on JD-COLLECTION</p>
+  </div>
+  <div class="row max-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\jacket.jpg"  width="250px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--second-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\stylish jacket2.jpg"  width="340px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--third-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\stylishjacket.jpeg"  width="340px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--forth-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\winter.png"  width="330px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+</section>
+
+<!--section 7-->
+<section id="winter" class="my-5">
+  
+  <div class="container text-center mt-5 py-5">
+    <h3>Dress & Jumpsuits</h3>
+    <hr class="mx-auto">
+    <p>Here are you can check out our new products with fair price on JD-COLLECTION</p>
+  </div>
+  <div class="row max-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\blezer.webp"  width="290px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--second-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\cout.jpg"  width="280px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--third-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\hoodies.png"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--forth-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\shirt1.jpeg"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+</section>
+<!--section8-->
+<section id="winter2" class="my-5">
+
+  <div class="container text-center mt-5 py-5">
+    <h3>Dress & Jumpsuits</h3>
+    <hr class="mx-auto">
+    <p>Here are you can check out our new products with fair price on JD-COLLECTION</p>
+  </div>
+  <div class="row max-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\jacket3.avif"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--second-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\jacket2.jpg"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--third-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\bigjacket3.jpg"  width="270px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--forth-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\letherjacket.jpg"  width="210px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+</section>
+
+<!--shopcont-->
+<!--section 7-->
+<div class="shop">
+<section id="winter" class="my-5">
+  
+  <div class="container text-center mt-5 py-5">
+    <h3>Dress & Jumpsuits</h3>
+    <hr class="mx-auto">
+    <p>Here are you can check out our new products with fair price on JD-COLLECTION</p>
+  </div>
+  <div class="row max-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\blezer.webp"  width="290px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--second-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\cout.jpg"  width="280px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--third-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\hoodies.png"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--forth-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\shirt1.jpeg"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+</section>
+<!--section8-->
+<section id="winter2" class="my-5">
+
+  <div class="container text-center mt-5 py-5">
+    <h3>Dress & Jumpsuits</h3>
+    <hr class="mx-auto">
+    <p>Here are you can check out our new products with fair price on JD-COLLECTION</p>
+  </div>
+  <div class="row max-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\jacket3.avif"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--second-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\jacket2.jpg"  width="350px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--third-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\bigjacket3.jpg"  width="270px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!--forth-->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img  class="img-fludi mb-3" src="clotheimg\letherjacket.jpg"  width="210px"alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">469.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+</section>
+
+</div>
+<!--shopcont-->
+
+
+
+
+
+
+  <script src="script.js"></script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+
+
+<footer>
+  <div class="footconainer">
+    <hr class="horizantal">
+    <div class="row1">
+     
+      <div class="dealil1">
+      <img class="logo"  src="xylonlogo2.png" alt="">
+      <p>XYLON THE BEST SHOP WITH THE BEST PRICES</p>
+      </div>
+      <div class="shoplink">
+      <h3>SERVICES</h3>
+      <ul>
+         <li><a href="">Men</a></li>
+         <li><a href="">Women</a></li>
+         <li><a href="">KIDS</a></li>
+        
+      </ul>
+      </div>
+      <div class="customersup">
+       <h3>CUSTOMMER SUPPORT</h3>
+       <ul>
+        <li>-Contact Us</li>
+        <li>-FAQ</li>
+        <li>-Return policy</li>
+        <li>-Shiping Add</li>
+       </ul>
+      </div>
+    </div>
+    <div class="row2">
+      <hr class="horizantal1">
+      <div class="payment">
+        <h3>Payment Method</h3>
+        <img src="https://assets.faballey.com/images/patmentimgfabv1.png?v=16.4" alt="">
+      </div>
+      <div class="footer-section2">
+        <h3>Connect with Us:</h3>
+        <div class="social-icons">
+            <i class="bi bi-instagram"></i>
+          <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
+          <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+          <a href="#"><i id="instagram" class="fab fa-instagram"></i></a>
+          <a href="#"><i id="linkdin" class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i id="youtube" class="fab fa-youtube"></i></a>
+    
+      </div>
+    </div>
+      <div class="legal">
+        <h3>LEGAL</h3>
+        <P>-Privacy Policy</P>
+        <p>-Terms & Condition</p>
+        <p>-Accessbility</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>@2024pankajroy.All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

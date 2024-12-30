@@ -1,0 +1,97 @@
+
+
+/*search*/
+
+.srcBox input[type="search"] {
+    border: none;
+    width: 17px;
+    position: relative;
+    height: 35px;
+    text-indent: 9999px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #7a7a7a;
+    box-sizing: border-box;
+    background-color: transparent;
+    cursor: pointer;
+    background: url(https://assets.faballey.com/themes/default/images/indya/srcicon.png) no-repeat 97%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input, select, textarea {
+    font-family: 'Lato';
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}
+user agent stylesheet
+input[type="search" i] {
+    appearance: auto;
+    box-sizing: border-box;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+user agent stylesheet
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+}
+user agent stylesheet
+input {
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-variant-emoji: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+.menuMain {
+    text-align: center;
+}
+body {
+    font-family: 'Lato';
+    color: #323232;
+}
+injected stylesheet
+:host, :root {
+    --rem: 16;
+}
